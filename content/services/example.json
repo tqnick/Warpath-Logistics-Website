@@ -1,1 +1,5 @@
-
+{
+  "title": "Example Service",
+  "description": "Example service description",
+  "image": ""
+}
