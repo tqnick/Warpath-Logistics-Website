@@ -6,31 +6,13 @@ media_folder: "assets"
 public_folder: "/assets"
 
 collections:
-  - name: "pages"
-    label: "Pages"
+  - name: "settings"
+    label: "Site Settings"
     files:
-
-      - label: "Homepage"
-        name: "home"
-        file: "index.html"
+      - label: "Business Info"
+        name: "business_info"
+        file: "admin/site-settings.yml"
         fields:
-          - {label: "Title", name: "title", widget: "string"}
-
-      - label: "Services"
-        name: "services"
-        file: "services.html"
-        fields:
-          - {label: "Title", name: "title", widget: "string"}
-
-      - label: "About"
-        name: "about"
-        file: "about.html"
-        fields:
-          - {label: "Content", name: "content", widget: "text"}
-
-      - label: "Contact"
-        name: "contact"
-        file: "contact.html"
-        fields:
-          - {label: "Phone", name: "phone", widget: "string"}
-          - {label: "Email", name: "email", widget: "string"}
+          - { label: "Business Name", name: "business_name", widget: "string" }
+          - { label: "Phone", name: "phone", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
