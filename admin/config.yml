@@ -14,7 +14,7 @@ collections:
         file: "content/home.json"
         fields:
           - { label: "Headline", name: "headline", widget: "string" }
-          - { label: "Subheadline", name: "subheadline", widget: "string" }
+          - { label: "Subheadline", name: "subheadline", widget: "text" }
           - { label: "Hero Image", name: "hero_image", widget: "image" }
 
   - name: "services"
@@ -22,50 +22,47 @@ collections:
     folder: "content/services"
     create: true
     slug: "{{slug}}"
+    extension: "json"
+    format: "json"
     fields:
       - { label: "Service Name", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "text" }
-      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Image", name: "image", widget: "image", required: false }
 
   - name: "equipment"
     label: "Equipment"
     folder: "content/equipment"
     create: true
     slug: "{{slug}}"
+    extension: "json"
+    format: "json"
     fields:
       - { label: "Equipment Name", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "text" }
-      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Image", name: "image", widget: "image", required: false }
 
   - name: "testimonials"
     label: "Testimonials"
     folder: "content/testimonials"
     create: true
     slug: "{{slug}}"
+    extension: "json"
+    format: "json"
     fields:
       - { label: "Customer Name", name: "name", widget: "string" }
       - { label: "Review", name: "review", widget: "text" }
-
-  - name: "loads"
-    label: "Load Requests"
-    folder: "content/loads"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "Pickup Location", name: "pickup", widget: "string" }
-      - { label: "Delivery Location", name: "delivery", widget: "string" }
-      - { label: "Cargo Type", name: "cargo", widget: "string" }
-      - { label: "Weight", name: "weight", widget: "string" }
 
   - name: "blog"
     label: "Blog"
     folder: "content/blog"
     create: true
     slug: "{{slug}}"
+    extension: "json"
+    format: "json"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Date", name: "date", widget: "string" }
+      - { label: "Body", name: "body", widget: "text" }
 
   - name: "settings"
     label: "Settings"
