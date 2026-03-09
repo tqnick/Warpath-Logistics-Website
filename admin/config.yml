@@ -6,13 +6,19 @@ media_folder: "assets"
 public_folder: "/assets"
 
 collections:
-  - name: "site"
-    label: "Site Settings"
+  - name: "settings"
+    label: "Settings"
     files:
-      - file: "admin/site-settings.yml"
-        label: "Business Info"
+      - label: "Business Info"
         name: "business_info"
+        file: "admin/site-settings.yml"
         fields:
-          - { label: "Business Name", name: "business_name", widget: "string" }
-          - { label: "Phone", name: "phone", widget: "string" }
-          - { label: "Email", name: "email", widget: "string" }
+          - label: "Business Name"
+            name: "business_name"
+            widget: "string"
+          - label: "Phone"
+            name: "phone"
+            widget: "string"
+          - label: "Email"
+            name: "email"
+            widget: "string"
